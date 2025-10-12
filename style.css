@@ -53,9 +53,12 @@ a.button {
   transition: 0.2s;
 }
 
+/* ボタンごとのホバー色 */
 a.button:hover {
-  background: #16a34a;
-  color: #fff;
+a.button:nth-child(1):hover { background: #16a34a; } /* サーバー情報 */
+a.button:nth-child(2):hover { background: #0ea5e9; } /* ルール */
+a.button:nth-child(3):hover { background: #facc15; color: #000; } /* 国家一覧 */
+a.button:nth-child(4):hover { background: #3b82f6; } /* webサイト */
 }
 
 /* フッター */
