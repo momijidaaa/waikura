@@ -1,0 +1,69 @@
+/* ベース設定 */
+body {
+  font-family: 'Segoe UI', 'Noto Sans JP', sans-serif;
+  background: #f9fff9;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+header {
+  background: linear-gradient(90deg, #16a34a, #0ea5e9, #facc15);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+/* メイン */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+/* ナビゲーション */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+a.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 2px solid #16a34a;
+  color: #16a34a;
+  transition: 0.2s;
+}
+
+a.button:hover {
+  background: #16a34a;
+  color: #fff;
+}
+
+/* フッター */
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.85rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
