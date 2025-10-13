@@ -1,4 +1,4 @@
-/* ベース設定 */
+/* ===== ベース ===== */
 body {
   font-family: 'Segoe UI', 'Noto Sans JP', sans-serif;
   background: #f9fff9;
@@ -7,21 +7,54 @@ body {
   padding: 0;
 }
 
-/* ヘッダー */
+/* ===== ヘッダー ===== */
 header {
-  background: linear-gradient(90deg, #16a34a, #0ea5e9, #facc15);
+  background-color: #16a34a;
   color: white;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-/* メイン */
+/* ===== ナビゲーション ===== */
+nav {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+a.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 2px solid #16a34a;
+  color: #16a34a;
+  transition: all 0.3s ease;
+}
+
+a.button:hover {
+  color: white;
+}
+
+/* 個別ボタンホバー */
+nav a.button:nth-child(1):hover { background: #16a34a; }
+nav a.button:nth-child(2):hover { background: #0ea5e9; border-color: #0ea5e9; }
+nav a.button:nth-child(3):hover { background: #facc15; border-color: #facc15; color: #000; }
+nav a.button:nth-child(4):hover { background: #3b82f6; border-color: #3b82f6; }
+
+/* ===== メイン ===== */
 main {
   max-width: 800px;
   margin: 40px auto;
@@ -34,34 +67,7 @@ p {
   margin-bottom: 24px;
 }
 
-/* ナビゲーション */
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-a.button {
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  border: 2px solid #16a34a;
-  color: #16a34a;
-  transition: 0.2s;
-}
-
-/* ボタンごとのホバー色 */
-a.button:hover {
-a.button:nth-child(1):hover { background: #16a34a; } /* サーバー情報 */
-a.button:nth-child(2):hover { background: #0ea5e9; } /* ルール */
-a.button:nth-child(3):hover { background: #facc15; color: #000; } /* 国家一覧 */
-a.button:nth-child(4):hover { background: #3b82f6; } /* webサイト */
-}
-
-/* フッター */
+/* ===== フッター ===== */
 footer {
   margin-top: 60px;
   text-align: center;
