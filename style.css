@@ -76,3 +76,44 @@ footer {
   color: #555;
   border-top: 1px solid #ddd;
 }
+
+
+/* ===== ブロック崩し ===== */
+.game-main {
+  max-width: 920px;
+}
+
+.game-shell {
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #d1fae5;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(22, 163, 74, 0.12);
+  padding: 20px;
+}
+
+#breakout {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border: 2px solid #16a34a;
+  border-radius: 8px;
+  background: #f0fff4;
+}
+
+.game-info {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  font-weight: 700;
+}
+
+.game-message {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  color: #166534;
+  font-weight: 600;
+}
+
+nav a.button:nth-child(5):hover { background: #8b5cf6; border-color: #8b5cf6; }
