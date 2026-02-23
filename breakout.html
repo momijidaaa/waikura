@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ブロック崩し | わいくら 非公式</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>わいくら - ブロック崩し</h1>
+  </header>
+
+  <nav>
+    <a class="button" href="index.html">トップへ戻る</a>
+  </nav>
+
+  <main class="game-main">
+    <p>← → キーでパドルを操作。スペースキーで開始/再開できます。</p>
+    <section class="game-shell" aria-label="ブロック崩しゲーム">
+      <canvas id="breakout" width="720" height="480"></canvas>
+      <div class="game-info" aria-live="polite">
+        <span>スコア: <strong id="score">0</strong></span>
+        <span>ライフ: <strong id="lives">3</strong></span>
+        <span>レベル: <strong id="level">1</strong></span>
+      </div>
+      <p id="message" class="game-message">スペースキーでスタート！</p>
+      <button id="restart" class="button" type="button">リスタート</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© わいくら 非公式サイト</p>
+  </footer>
+
+  <script src="breakout.js"></script>
+</body>
+</html>
